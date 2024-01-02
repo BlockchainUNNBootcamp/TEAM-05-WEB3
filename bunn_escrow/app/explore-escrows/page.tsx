@@ -4,7 +4,7 @@ import Web3 from "web3";
 import ABI from "./jsonAbi.json";
 import { useContractRead } from "wagmi";
 import { useRouter } from "next/navigation";
-import { FormatTimeLeft } from "./utils";
+import { FormatString, FormatTimeLeft } from "./utils";
 
 export type TransactionType = {
   amount: number;
@@ -108,10 +108,3 @@ export default function Explore() {
     </div>
   );
 }
-const FormatString = ({ text }: { text: string }) => {
-  return (
-    <span>
-      {text.slice(0, 5)}...{text.slice(text.length - 5, text.length)}
-    </span>
-  );
-};

@@ -10,9 +10,7 @@ export const FormatTimeLeft = ({
 }) => {
   const [tick, setTick] = useState<boolean>();
   useEffect(() => {
-    let tiker;
-    if (timeInSeconds) tiker = setInterval(() => setTick(!tick), 1000);
-    return clearInterval(tiker);
+    if (timeInSeconds) setInterval(() => setTick(!tick), 1000);
   }, [tick, timeInSeconds]);
 
   if (!timeInSeconds) return <span className={className}>No set time</span>;
@@ -32,4 +30,12 @@ export const FormatTimeLeft = ({
   } ${hoursLeft}h ${minutesLeft}m ${secondsLeft}s`;
 
   return <span className={className}>{returnString}</span>;
+};
+
+export const FormatString = ({ text }: { text: string }) => {
+  return (
+    <span>
+      {text.slice(0, 5)}...{text.slice(text.length - 5, text.length)}
+    </span>
+  );
 };

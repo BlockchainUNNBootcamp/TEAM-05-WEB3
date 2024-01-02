@@ -1,6 +1,6 @@
 # BUNN-Escrow Manager
 
-This Escrow manager helps automates the escrow process using the power of smart contracts powered by Blockchain technology
+This Escrow manager helps automate the escrow process using the power of smart contracts powered by Blockchain technology
 
 # What is an escrow?
 
@@ -8,6 +8,9 @@ An escrow is a financial arrangement where a third party, known as an escrow age
 This system is still reliant on trust thus making it risky.
 The need for a trustless and safe system arises. This is what our project aims to solve.
 
+
+## Live Link
+https://bunn-escrow.vercel.app/create
 
 ## Tech Stack
 

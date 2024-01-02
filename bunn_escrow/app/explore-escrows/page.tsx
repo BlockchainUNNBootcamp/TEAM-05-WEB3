@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Web3 from "web3";
 import ABI from "./jsonAbi.json";
 import { useContractRead } from "wagmi";
